@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context=".SiteChooseActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar_top"
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:background="@android:color/white"
+        android:layout_height="wrap_content">
+        <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/account_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_account_circle_black_24dp"
+                android:text=" Welcome: Dedan "
+                android:layout_marginLeft="20dp"/>
+        </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+
+    <TextView
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_below="@id/appbar_top"
+        android:id="@+id/choose_site_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CHOOSE SITE"/>
+
+
+
+    <RelativeLayout
+    android:layout_centerInParent="true"
+    android:layout_width="match_parent"
+    android:padding="20dp"
+    android:elevation="10dp"
+    android:layout_height="wrap_content">
+
+
+
+    <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+        android:layout_marginTop="20dp"
+        android:id="@+id/site_name"
+        android:text="By Site Name"
+        android:layout_centerHorizontal="true"
+        android:textSize="18dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+        android:id="@+id/site_id"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/site_name"
+        android:text="By Site Id"
+        android:layout_centerHorizontal="true"
+        android:textSize="18dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/validate_location_btn"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/site_id"
+        android:layout_centerHorizontal="true"
+        android:text="Validate Location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>
+
+
+
+</RelativeLayout>

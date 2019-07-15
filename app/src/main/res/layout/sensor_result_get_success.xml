@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_margin="10dp"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/device_detail_title"
+        android:layout_width="match_parent"
+        android:text="DEVICE CONFIGURATIONS"
+        android:gravity="center_horizontal"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_height="wrap_content" />
+
+   <LinearLayout
+       android:id="@+id/layout_1"
+       android:layout_marginTop="10dp"
+       android:padding="10dp"
+       android:layout_below="@id/device_detail_title"
+       android:orientation="horizontal"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+
+       <TextView
+           android:layout_weight="1"
+           android:layout_width="0dp"
+           android:textSize="18sp"
+           android:text="DEVICE ID"
+           android:layout_height="wrap_content" />
+       <TextView
+           android:id="@+id/device_id"
+           android:layout_weight="1"
+           android:layout_width="0dp"
+           android:textSize="18sp"
+           android:text="01245639778"
+           android:layout_height="wrap_content" />
+
+   </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_2"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:layout_below="@id/layout_1"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:textSize="18sp"
+            android:text="SIM SERIAL"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/sim_serial"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:textSize="18sp"
+            android:text="012456377879778"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_3"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:layout_below="@id/layout_2"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:textSize="18sp"
+            android:text="HEADING"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/heading"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:textSize="18sp"
+            android:text="240"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_4"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/layout_3"
+        android:padding="10dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:textSize="18sp"
+            android:text="PITCH"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/pitch"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:textSize="18sp"
+            android:text="70"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_5"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/layout_4"
+        android:padding="10dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:textSize="18sp"
+            android:text="ROLL"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/roll"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:textSize="18sp"
+            android:text="90"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+</RelativeLayout>

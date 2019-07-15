@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/home_appbar_layout"
+        android:layout_width="match_parent"
+        android:background="@android:color/white"
+        android:layout_height="wrap_content">
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/top_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/user_profile"
+                android:layout_width="wrap_content"
+                android:textSize="18sp"
+                android:drawableLeft="@drawable/ic_account_circle_black_24dp"
+                android:layout_height="wrap_content"
+                android:text=" Welcome:Dedan"/>
+
+        </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+
+  <FrameLayout
+      android:id="@+id/fragment_container"
+      android:layout_below="@+id/home_appbar_layout"
+      android:layout_above="@+id/bottom_nav_layout"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
+
+  </FrameLayout>
+
+
+   <android.support.design.widget.AppBarLayout
+      android:id="@+id/bottom_nav_layout"
+       android:background="@android:color/white"
+       android:layout_alignParentBottom="true"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+
+       <android.support.design.widget.BottomNavigationView
+           android:id="@+id/bottom_navigation"
+           android:layout_width="match_parent"
+           app:menu="@menu/bottom_menu"
+           app:itemIconTint="@color/selector"
+           app:itemTextColor="@color/selector"
+           app:labelVisibilityMode="labeled"
+           android:layout_height="wrap_content">
+
+       </android.support.design.widget.BottomNavigationView>
+
+   </android.support.design.widget.AppBarLayout>
+
+
+
+
+
+</RelativeLayout>

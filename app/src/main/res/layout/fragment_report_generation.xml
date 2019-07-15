@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="20dp"
+    tools:context=".Fragments.ReportGeneration">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/report_title"
+            android:layout_centerHorizontal="true"
+            android:textSize="15dp"
+            android:layout_width="wrap_content"
+            android:text="INSTALLATION REPORT"
+            android:layout_height="wrap_content"/>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/report_cardView"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/report_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:id="@+id/select_report_layout1"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:text="SITE NAME"
+                        android:textSize="14sp"
+                        android:textColor="@android:color/black"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/report_site_name"
+                        android:text="SITE NAME: ADC Muthithi"
+                        android:textSize="15sp"
+                        android:lines="3"
+                        android:maxLines="4"
+                        android:gravity="center"
+                        android:layout_width="0dp"
+                        android:layout_weight="4"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:id="@+id/select_report_layout2"
+                    android:layout_below="@id/select_report_layout1"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:text="SITE ID"
+                        android:textSize="14sp"
+                        android:textColor="@android:color/black"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/report_site_id"
+                        android:textSize="15sp"
+                        android:gravity="center"
+                        android:lines="2"
+                        android:text="SITE ID: 123456"
+                        android:layout_width="0dp"
+                        android:layout_weight="4"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/select_report_layout3"
+                    android:layout_below="@id/select_report_layout2"
+                    android:layout_width="match_parent"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:text="TECHNOLOGY USED: "
+                        android:textSize="14sp"
+                        android:textColor="@android:color/black"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="3"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/report_technology"
+                        android:layout_below="@id/report_site_id"
+                        android:text="TECHNOLOGY: LTE"
+                        android:textSize="15sp"
+                        android:gravity="center"
+                        android:layout_width="0dp"
+                        android:layout_weight="4"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/select_report_layout4"
+                    android:layout_below="@id/select_report_layout3"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:text="SECTOR NO"
+                        android:textSize="14sp"
+                        android:textColor="@android:color/black"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="2"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/report_sectors"
+                        android:layout_below="@id/report_technology"
+                        android:text="SECTORS: 3"
+                        android:textSize="15sp"
+                        android:gravity="center"
+                        android:layout_width="0dp"
+                        android:layout_weight="4"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+
+                <TableLayout
+                    android:id="@+id/results_table"
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@+id/select_report_layout4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TableRow
+                        android:id="@+id/resultTable_row0"
+                        android:background="@drawable/table_row_bg"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="5dp">
+                        <TextView
+                            android:layout_width="0dp"
+                            android:background="@drawable/table_cell_bg"
+                            android:gravity="center"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Sector" />
+                        <TextView
+                            android:layout_width="0dp"
+                            android:gravity="center"
+                            android:background="@drawable/table_cell_bg"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Heading" />
+                        <TextView
+                            android:layout_width="0dp"
+                            android:gravity="center"
+                            android:background="@drawable/table_cell_bg"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Roll" />
+                        <TextView
+                            android:layout_width="0dp"
+                            android:gravity="center"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Pitch" />
+
+                    </TableRow>
+
+                </TableLayout>
+
+            </RelativeLayout>
+
+
+        </android.support.v7.widget.CardView>
+
+
+        <Button
+            android:id="@+id/generate_certificate_btn"
+            android:text="GENERATE CERTIFICATE"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/report_cardView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+
+
+
+    </RelativeLayout>
+
+</FrameLayout>

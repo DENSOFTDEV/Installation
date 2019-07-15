@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_margin="20dp"
+    android:layout_height="match_parent">
+
+
+
+    <TextView
+        android:id="@+id/thresh_hold_title"
+        android:text="Thresh hold results"
+        android:textStyle="italic"
+        android:padding="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:id="@+id/results_layout1"
+        android:orientation="horizontal"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/thresh_hold_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_weight="1"
+            android:text="Heading "
+            android:textSize="18sp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/Thresh_heading_value"
+            android:layout_weight="1"
+            android:text="true"
+            android:textSize="18sp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/results_layout2"
+        android:orientation="horizontal"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/results_layout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_weight="1"
+            android:text="Roll "
+            android:textSize="18sp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/Thresh_roll_value"
+            android:layout_weight="1"
+            android:text="false"
+            android:textSize="18sp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/results_layout3"
+        android:orientation="horizontal"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/results_layout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_weight="1"
+            android:text="Pitch "
+            android:textSize="18sp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/Thresh_pitch_value"
+            android:layout_weight="1"
+            android:text="true"
+            android:textSize="18sp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/set_values_title"
+        android:padding="5dp"
+        android:text="Set values validation result"
+        android:textStyle="italic"
+        android:layout_below="@+id/results_layout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:id="@+id/results_layout4"
+        android:orientation="horizontal"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/set_values_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_weight="1"
+            android:text="Heading "
+            android:textSize="18sp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/set_value_heading"
+            android:layout_weight="1"
+            android:text="true"
+            android:textSize="18sp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/results_layout5"
+        android:orientation="horizontal"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/results_layout4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_weight="1"
+            android:text="Roll "
+            android:textSize="18sp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/set_value_Roll"
+            android:layout_weight="1"
+            android:text="false"
+            android:textSize="18sp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/results_layout6"
+        android:orientation="horizontal"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/results_layout5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_weight="1"
+            android:text="Pitch "
+            android:textSize="18sp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/set_value_pitch"
+            android:layout_weight="1"
+            android:text="true"
+            android:textSize="18sp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/validation_msg_title"
+        android:layout_below="@id/results_layout6"
+        android:text="Overall Results"
+       android:textStyle="italic"
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/validation_msg"
+        android:layout_below="@id/validation_msg_title"
+        android:text="Heading, roll and pitch are within the threshold values but did not match the installation  set values!!"
+        android:gravity="center"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

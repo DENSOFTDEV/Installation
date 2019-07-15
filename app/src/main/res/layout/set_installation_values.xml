@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_margin="10dp"
+    android:layout_height="match_parent">
+
+
+   <LinearLayout
+       android:id="@+id/setvalues_layout1"
+       android:layout_margin="10dp"
+       android:orientation="horizontal"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+
+       <TextView
+           android:layout_width="0dp"
+           android:text="Heading"
+           android:layout_weight="1"
+           android:layout_height="wrap_content" />
+
+       <TextView
+           android:id="@+id/set_heading_value"
+           android:layout_width="0dp"
+           android:text="45.4556"
+           android:layout_weight="1"
+           android:layout_height="wrap_content" />
+
+   </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/setvalues_layout2"
+        android:layout_margin="10dp"
+        android:layout_below="@id/setvalues_layout1"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="0dp"
+            android:text="Pitch"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/set_pitch_value"
+            android:layout_width="0dp"
+            android:text="37.4556"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/setvalues_layout3"
+        android:layout_margin="10dp"
+        android:layout_below="@id/setvalues_layout2"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="0dp"
+            android:text="Roll"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/set_roll_value"
+            android:layout_width="0dp"
+            android:text="85.4556"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</RelativeLayout>
